@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <style>
+        h2, section{
+            text-align: center;
+        }
+        input{
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Formulario de inscripción</h2>
+    </header>
+
+    <section>
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br>
+    
+            <label for="apellido">Apellido:</label><br>
+            <input type="text" id="apellido" name="apellido" required><br>
+    
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+    
+            <label for="telefono">Teléfono:</label><br>
+            <input type="tel" id="telefono" name="telefono" required><br>
+    
+            <label for="curso">Curso de interés:</label><br>
+            <select id="curso" name="curso" required>
+                <option value="">Seleccione un curso</option>
+                <option value="ingles">Inglés</option>
+                <option value="frances">Francés</option>
+                <option value="espanol">Español</option>
+                <option value="italiano">Italiano</option>
+                <option value="chino">Chino</option>
+            </select><br><br>
+    
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+        <section>
+        <h4>Correo</h4>
+        <a href="mailto:">englishacademy@yop.com</a>
+        <h4>Teléfono</h4>
+        <a href="tel:+593">992996268</a>
+    </section>
+</body>
+</html>

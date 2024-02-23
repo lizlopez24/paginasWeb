@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealtyFood</title>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+main {
+    flex: 1;
+    padding: 20px;
+}
+        .superior{
+            flex:1;
+            display: flex;
+            width: 100%;
+            height: 120px;
+        }
+        .inferior{
+            width: 100%;
+            height: 80px;
+        }
+        .table1{
+            width: 100%;
+            background-color:rgb(235, 196, 147);
+        }
+        nav{
+            flex:1;
+            width: 100%;
+            text-align: center;
+        }
+        section {
+    display: none;
+  }
+  section:target {
+    display: block;
+  }
+  .contenido{
+    flex:1;
+    display: flex;
+    width: 310%;
+    height: 600px; ;
+  }
+  a{
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .contenedor{
+    display: flex;
+        }
+        .izquierdo{
+            flex: 0 0 25%;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <iframe src="/ejercicio3/superior.html" frameborder="0" class="superior"></iframe>
+    </header>
+            <nav>
+                <table class="table1">
+                    <tr>
+                        <td><a href="index.html">Home</a></td>
+                        <td><a href="#seccion1">Sobre nosotros</a></td>
+                        <td><a href="#seccion2">Productos</a></td>
+                        <td><a href="#seccion3">Recetas</a></td>
+                        <td><a href="#seccion4">Contacto</a></td>
+                    </tr>
+                </table>
+            </nav>
+        <main>
+            <div class="contenedor">
+                <iframe src="/ejercicio3/info.html" frameborder="0" class="izquierdo"></iframe>
+        <section id="seccion0" style="text-align: center;" >
+            <iframe src="/ejercicio3/favoritos.html" frameborder="0" class="contenido"></iframe>
+        </section>
+        <section id="seccion1">
+            <iframe src="/ejercicio3/nosotros.html" frameborder="0" class="contenido"></iframe>
+        </section>
+        <section id="seccion2">
+            <iframe src="/ejercicio3/productos.html" frameborder="0" class="contenido"></iframe>
+        </section>
+        <section id="seccion3">
+            <iframe src="/ejercicio3/recetas.html" frameborder="0" class="contenido"></iframe>
+        </section>
+        <section id="seccion4">
+            <iframe src="/ejercicio3/contactos.html" frameborder="0" class="contenido"></iframe>
+        </section>
+    </div>
+    </main>
+        <footer>
+            <iframe src="/ejercicio3/inferior.html" frameborder="0" class="inferior"></iframe>
+        </footer>
+</body>
+</html>
